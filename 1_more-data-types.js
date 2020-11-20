@@ -9,8 +9,8 @@ therefore you can't use it as a variable or argument name.
 */
 
 var someVariable
-// At this point, someVariable is 'undefined' since the variable
-// is only declared, not defined/assigned a value.
+// At this point, someVariable is 'undefined' since the variable is only declared. It
+// has not been defined or assigned a value yet.
 
 console.log('someVariable =', someVariable)
 
@@ -27,10 +27,12 @@ someVariable = undefined
 - null
 =========================================================================================
 
-Sometimes you might want to intentionally assign an empty or non-existent value to a variable.
-If you want to represent something that exists as being empty, you have to set it to 'null'.
-Unlike 'undefined' variables are not automatically set to 'null'. 'null' is a reserved keyword
-therefore you can't use it as a variable or argument name.
+Sometimes you might want to intentionally assign a non-existent or empty value to a variable.
+
+The difference between 'undefined' and 'null' is that 'null' actually represents an empty or blank
+value while 'undefined' means that a variable has not been defined or assigned a value.
+
+'null' is a reserved keyword, therefore you can't use it as a variable or an argument name.
 */
 
 // Here we define the variable ourselves
